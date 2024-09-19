@@ -50,3 +50,17 @@ private void withdrawMoney(Scanner scanner) {
         }
     }
 }
+private double getAmount(Scanner scanner, String prompt) {
+    System.out.print(prompt);
+    try {
+        double amount = Double.parseDouble(scanner.nextLine());
+        if (amount < 0) {
+            System.out.println("The amount must be positive.");
+            return -1;
+        }
+        return amount;
+    } catch (NumberFormatException e) {
+        System.out.println("Invalid amount, please try again.");
+        return -1;
+    }
+}
