@@ -39,3 +39,14 @@ private void depositMoney(Scanner scanner) {
         System.out.printf("You have deposited : %.2f kr.%n", amount);
     }
 }
+private void withdrawMoney(Scanner scanner) {
+    double amount = getAmount(scanner, "Enter amount to withdraw: ");
+    if (amount >= 0) {
+        if (amount > balance) {
+            System.out.println("Insufficient funds for this withdrawal.");
+        } else {
+            balance -= amount;
+            System.out.printf("You have withdrawn : %.2f kr.%n", amount);
+        }
+    }
+}
