@@ -32,3 +32,10 @@ public void displayMenu() {
 private void checkBalance() {
     System.out.printf("Your balance is: %.2f kr%n \n", balance);
 }
+private void depositMoney(Scanner scanner) {
+    double amount = getAmount(scanner, "Please enter amount to deposit: \n");
+    if (amount >= 0) {
+        balance += amount;
+        System.out.printf("You have deposited : %.2f kr.%n", amount);
+    }
+}
