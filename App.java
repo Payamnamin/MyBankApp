@@ -24,6 +24,8 @@ public void displayMenu() {
                 return;
             default:
                 System.out.println("INVALID CHOICE!!!, please try again.");
+
+            
         }
     }
 }
