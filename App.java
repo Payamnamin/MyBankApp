@@ -23,7 +23,7 @@ class App {
         // Create the main window (JFrame)
         frame = new JFrame("Bank Application");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Close application on window close
-        frame.setSize(400, 300); // Set window size
+        frame.setSize(1000, 200); // Set window size
         frame.setLayout(new BorderLayout()); // Set layout manager
 
         // Create a text area for displaying messages
